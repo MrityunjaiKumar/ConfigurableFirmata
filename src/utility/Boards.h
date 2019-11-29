@@ -603,6 +603,7 @@ writePort(port, value, bitmask):  Write an 8 bit port.
 // ESP32 boards currently only work with Firmata over Wi-Fi.
 // Supply > 500mA to the board (laptop USB current is typically not enough, use a powered USB hub).
 #elif defined(ESP32)
+#define LED_BUILTIN 2
 #define TOTAL_ANALOG_PINS       NUM_ANALOG_INPUTS
 #define TOTAL_PINS              NUM_DIGITAL_PINS
 #define VERSION_BLINK_PIN       LED_BUILTIN
